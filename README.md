@@ -3,10 +3,12 @@ Working through [Building a Python 3 App on App Engine tutorial](https://cloud.g
 
 # docker
 Test app in docker
+```
 # Build
 docker build -t test-flask-app .
 # Run
 docker run -p 5000:5000 test-flask-app:latest
+```
 
 ## References
 - https://medium.com/@dmahugh_70618/deploying-a-flask-app-to-google-app-engine-faa883b5ffab
