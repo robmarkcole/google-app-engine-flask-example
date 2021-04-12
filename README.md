@@ -1,6 +1,8 @@
 # google-app-engine-flask-example
 Working through [Building a Python 3 App on App Engine tutorial](https://cloud.google.com/appengine/docs/standard/python3/building-app)
 
+TLDR: require an `app.yaml` then `gcloud services enable cloudbuild.googleapis.com` and finally `gcloud app deploy`. To view the app run `gcloud app browse` and to close and delete `gcloud projects delete MY-PROJ-ID`
+
 # docker
 Test app in docker
 ```
