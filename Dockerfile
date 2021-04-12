@@ -1,5 +1,7 @@
 FROM gcr.io/google-appengine/python
 
+EXPOSE 5000
+
 # Create a virtualenv for dependencies. This isolates these packages from
 # system-level packages.
 # Use -p python3 or -p python3.7 to select python version. Default is version 2.
@@ -19,7 +21,5 @@ RUN pip install -r /app/requirements.txt
 
 # Add the application source code.
 ADD . /app
-
-EXPOSE 5000
 
 CMD python main.py
